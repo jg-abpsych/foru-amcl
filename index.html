@@ -1,47 +1,6 @@
 <!doctype html>
 <html>
   <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Password Fade Out</title>
-<script src="https://jquery.com"></script>
-<style>
-    #login-container {
-        font-family: sans-serif;
-        padding: 20px;
-        background-color: #f0f0f0;
-        width: 300px;
-        margin: 50px auto;
-        text-align: center;
-        border-radius: 8px;
-    }
-    input[type="password"] {
-        padding: 10px;
-        width: 80%;
-        margin-bottom: 10px;
-    }
-</style>
-</head>
-<body>
-
-<div id="login-container">
-    <h3>Enter Password</h3>
-    <input type="password" id="password-field" placeholder="Password">
-</div>
-
-<script>
-$(document).ready(function() {
-    const CORRECT_PASSWORD = "secret123";
-
-    $('#password-field').on('input', function() {
-        if ($(this).val() === CORRECT_PASSWORD) {
-            // Fade out the container over 1 second (1000ms)
-            $('#login-container').fadeOut(1000);
-        }
-    });
-});
-</script>
-  <head>
     <!-- Page setup -->
     <meta charset="utf-8">
     <title>Your title here</title>
