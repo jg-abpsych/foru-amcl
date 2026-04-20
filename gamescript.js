@@ -73,7 +73,7 @@ function handleYesClick() {
         showTeaseMessage(msg)
         return
     }
-    window.location.href = 'yes.html'
+    window.location.href = 'gameyes.html'
 }
 
 function showTeaseMessage(msg) {
