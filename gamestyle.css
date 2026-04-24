@@ -42,7 +42,7 @@ body {
 .hearts-bg::after {
     animation-delay: 6s;
     left: 60%;
-    content: '💗 💕 💓 💖 💝';
+    content: '💗 💕 💓 💖 💝❤🖤🖤💜💜🤍🤍💕💕💓💓💖💖💖💘💘💘';
 }
 
 @keyframes floatHearts {
