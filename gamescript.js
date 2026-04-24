@@ -9,20 +9,6 @@ const gifStages = [
     "https://media.tenor.com/J2SMf2oW7XkAAAAj/cat-stare.gif"  // 7 crying runaway
 ]
 
-const yesGifs = [
-    "https://media.tenor.com/PaaHTyrzPBcAAAAj/omg-cat.gif", //1
-    "https://media.tenor.com/Vx8Q4QWS6m8AAAAj/what-is-that-stare.gif", //2
-    "https://media.tenor.com/KK4MJz2_YRgAAAAj/cat-spinning.gif", //3
-    "https://media.tenor.com/zPCe2_gSxL4AAAAj/hamster.gif", //4
-    "https://media.tenor.com/dLTIkj4p8JQAAAAi/almarts27-almarts27-hamsters.gif", //5
-    "https://media.tenor.com/SP05MWh2XroAAAAj/hamostor.gif". //6
-    "https://media.tenor.com/TyfFIPlSe6EAAAAj/chomik-chomikuj.gif",  //7
-    "https://media.tenor.com/0MBsT1Z1YXkAAAAj/chomik-chomikuj.gif",  //8
-    "https://media.tenor.com/3emyWm3eViwAAAAj/hamstosis-hamster.gif",  //9
-    "https://media.tenor.com/YnN8EygINvUAAAAj/funny-animals-funny-rodent.gif",  //10
-    "https://media.tenor.com/PaaHTyrzPBcAAAAj/omg-cat.gif" //11
-
-]
 const noMessages = [
     "🙄😲",
     "😥😭😭😭😭",
@@ -92,11 +78,7 @@ function handleYesClick() {
         if (yesTeasedCount ===10) {
             window.location.href = 'gameyes.html'
             return
-        }
-        
-        const gifIndex = Math.min(yesTeasedCount, yesGifs.length - 1)
-        swapGif(yesGifs[gifIndex])
-        
+        }    
         const msg = yesTeasePokes[Math.min(yesTeasedCount, yesTeasePokes.length - 1)]
         yesTeasedCount++
         showTeaseMessage(msg)
