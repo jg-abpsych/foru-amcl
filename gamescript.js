@@ -71,6 +71,10 @@ function toggleMusic() {
 function handleYesClick() {
     if (!runawayEnabled) {
         // Tease her to try No first
+        if (yesTeasedCount === 5) {
+            window.location.href = 'gameyes.html'
+            return
+        }
         const msg = yesTeasePokes[Math.min(yesTeasedCount, yesTeasePokes.length - 1)]
         yesTeasedCount++
         showTeaseMessage(msg)
