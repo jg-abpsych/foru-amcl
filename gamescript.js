@@ -1,12 +1,12 @@
 const gifStages = [
-    "https://media.tenor.com/1zmpK0IgsvgAAAAj/bss-funvideotv.gif",    // 0 normal
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAd/chiikawa-hachiware.gif",  // 1 confused
-    "https://media.tenor.com/f_rkpJbH1s8AAAAj/somsom1012.gif",             // 2 pleading
-    "https://media.tenor.com/OGY9zdREsVAAAAAj/somsom1012.gif",             // 3 sad
-    "https://media1.tenor.com/m/WGfra-Y_Ke0AAAAd/chiikawa-sad.gif",       // 4 sadder
-    "https://media.tenor.com/CivArbX7NzQAAAAj/somsom1012.gif",             // 5 devastated
-    "https://media.tenor.com/5_tv1HquZlcAAAAj/chiikawa.gif",               // 6 very devastated
-    "https://media1.tenor.com/m/uDugCXK4vI4AAAAC/chiikawa-hachiware.gif"  // 7 crying runaway
+    "https://media.tenor.com/8wCzLne7dEMAAAAj/weird.gif",    // 0 normal
+    "https://media.tenor.com/QWI_15GQBrQAAAAj/looking-looking-around.gif",  // 1 confused
+    "https://media1.tenor.com/m/4IckGuTqWeYAAAAC/spongebob-squarepants-begging.gif", // 2 pleading
+    "https://media1.tenor.com/m/uqCkDqPbjvYAAAAd/reaction-meme-stan-twitter.gif", // 3 sad
+    "https://media1.tenor.com/m/vB-w7iKKQsMAAAAd/ohno.gif",       // 4 sadder
+    "https://media.tenor.com/c6nXyQmertAAAAAj/the-voices.gif",             // 5 devastated
+    "https://media.tenor.com/J2SMf2oW7XkAAAAj/cat-stare.gif",               // 6 very devastated
+    "https://media1.tenor.com/m/BiEdW2zVchkAAAAd/cat.gif"  // 7 crying runaway
 ]
 
 const noMessages = [
