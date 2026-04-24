@@ -25,7 +25,10 @@ const yesTeasePokes = [
     "Are you sure? You sure Sure??",
     "Are you for realll????????",
     "No?",
-    "click no, I dare you"
+    "click no, I dare you",
+    "Aren't you supposed to break my heart?",
+    "Where's all the hate?",
+    "Is you for real this time?"
 ]
 
 let yesTeasedCount = 0
