@@ -73,6 +73,10 @@ function toggleMusic() {
 }
 
 function handleYesClick() {
+    if (noClickCount === 8) {
+        window.location.href = 'gameyes.html' // checks if no is already clicked "" times
+        return
+        
     if (!runawayEnabled) {
         // Tease her to try No first
         if (yesTeasedCount ===10) {
@@ -122,7 +126,7 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5 
-    if (noClickCount >= 8) {
+    if (noClickCount > 8) {
         window.location.href = 'ansno.html'
 // original
     //if (noClickCount >= 8 && !runawayEnabled) {
