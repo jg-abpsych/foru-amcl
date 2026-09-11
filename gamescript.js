@@ -123,6 +123,7 @@ function handleNoClick() {
     if (noClickCount >= 8 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
+        window.location.href = 'ansno.html'
     }
 }
 
