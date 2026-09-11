@@ -74,7 +74,7 @@ function toggleMusic() {
 
 function handleYesClick() {
     // checks if no is already clicked "" times
-    if (noClickCount === 8) {
+    if (noClickCount >= 6) {
         window.location.href = 'gameyes.html' 
         return
     }
