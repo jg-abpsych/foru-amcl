@@ -73,10 +73,12 @@ function toggleMusic() {
 }
 
 function handleYesClick() {
+    // checks if no is already clicked "" times
     if (noClickCount === 8) {
-        window.location.href = 'gameyes.html' // checks if no is already clicked "" times
+        window.location.href = 'gameyes.html' 
         return
-        
+    }
+    
     if (!runawayEnabled) {
         // Tease her to try No first
         if (yesTeasedCount ===10) {
