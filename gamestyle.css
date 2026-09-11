@@ -136,7 +136,22 @@ h1 {
     background: linear-gradient(135deg, #c0392b, #a93226);
 }
 
-#return-btn
+#return-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: background 0.2s, left 0.25s ease, top 0.25s ease;
+    box-shadow: 0 4px 14px rgba(231, 76, 60, 0.4);
+}
+
+#return-btn:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
 
 #tease-toast {
     margin-top: 14px;
