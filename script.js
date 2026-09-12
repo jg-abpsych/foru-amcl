@@ -25,5 +25,48 @@
     // $('#content').load(region.slice(1) + '.html')
     
   });
+
+  // --------------------------------------------------
+  // Secret Phrase Verification Logic (jQuery Version)
+  // --------------------------------------------------
+  $(document).ready(function() {
+    
+    function checkSecretPhrase() {
+      // Get input value, remove spaces, and make lowercase
+      const userInput = $('#secret-input').val().trim().toLowerCase();
+      const $secretMsg = $('#secret-message');
+      
+      // List of valid secret phrases
+      const validPhrases = [
+        "p 1",
+        "p1",
+        "secret passcode",
+        "banana"
+      ]; 
+
+      if (validPhrases.includes(userInput)) {
+        $secretMsg.css('color', '#4CAF50').text('Access granted! Redirecting...');
+        
+        setTimeout(function() {
+          window.location.href = "gameyes.html"; // Target page
+        }, 800);
+      } else {
+        $secretMsg.css('color', '#ff4d4d').text('Something went wrong');
+      }
+    }
+
+    // Run check on button click
+    $(document).on('click', '#secret-btn', function() {
+      checkSecretPhrase();
+    });
+
+    // Run check on Enter key press inside input
+    $(document).on('keypress', '#secret-input', function(e) {
+      if (e.which === 13) { // 13 is the Enter key code
+        checkSecretPhrase();
+      }
+    });
+
+  });
   
 })(jQuery);
