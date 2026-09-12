@@ -46,7 +46,8 @@
         "p1": "gameyes.html",
         "p 1": "ansno.html",
         "secret passcode": "game.html",
-        "julius": "https://youtu.be/UIjTKBaFDvY?si=CL9yUsPD0kC3XLvc"
+        "julius": "https://youtu.be/UIjTKBaFDvY?si=CL9yUsPD0kC3XLvc",
+        "password": "https://media1.tenor.com/m/_CSPN6dUU6oAAAAd/seriously.gif"
   
       }; 
 
