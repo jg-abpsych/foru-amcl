@@ -52,9 +52,14 @@
           
           <div id="about" class="content-region hide">
             <h2>hidden-panel</h2>
-            <p>
-              content-region-hide
-            </p>
+              <div class="secret-container">
+                <p class="secret-prompt">What could the password be?</p>
+                <div class="input-group">
+                  <input type="text" id="secret-input" placeholder="Type here..." autocomplete="off">
+                  <button type="button" id="secret-btn">Enter</button>
+                </div>
+                <p id="secret-message" class="secret-msg"></p>
+              </div>
           </div>
           
           <!-- <div id="contact" class="content-region hide">
