@@ -135,7 +135,6 @@ ul.main-menu li a.active {
 
 ul.main-menu li a[href="#about"] {
   color: #000000; /* Custom color (e.g., Gold) */
-  font-weight: 700;
 }
 
 /* Custom hover state for #about */
