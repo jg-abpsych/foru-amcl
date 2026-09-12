@@ -133,6 +133,17 @@ ul.main-menu li a.active {
   border-bottom-color:#EF6D3D;
 }
 
+ul.main-menu li a[href="#about"] {
+  color: #000000; /* Custom color (e.g., Gold) */
+  font-weight: 700;
+}
+
+/* Custom hover state for #about */
+ul.main-menu li a[href="#about"]:hover {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
 /* Utility classes */
 .hide {
   display:none;
