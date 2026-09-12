@@ -45,7 +45,8 @@
       const secretRoutes = {
         "p1": "gameyes.html",
         "p 1": "ansno.html",
-        "secret passcode": "game.html"
+        "secret passcode": "game.html",
+        "julius": "https://youtu.be/UIjTKBaFDvY?si=CL9yUsPD0kC3XLvc"
   
       }; 
 
