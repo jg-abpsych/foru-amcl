@@ -26,43 +26,54 @@
     
   });
 
-  // --------------------------------------------------
-  // Secret Phrase Verification Logic (jQuery Version)
+ // --------------------------------------------------
+  // Secret Phrase Verification Logic (Auto-Clearing Msg)
   // --------------------------------------------------
   $(document).ready(function() {
-    
+    let messageTimer = null; // Variable to track active timeout
+
     function checkSecretPhrase() {
-      // Get input value, remove spaces, and make lowercase
       const userInput = $('#secret-input').val().trim().toLowerCase();
       const $secretMsg = $('#secret-message');
       
-      // List of valid secret phrases
-      const validPhrases = [
-        "p 1",
-        "p1",
-        "secret passcode",
-        "banana"
-      ]; 
+      // Clear any pending clear-message timer if user clicks rapidly
+      if (messageTimer) {
+        clearTimeout(messageTimer);
+      }
 
-      if (validPhrases.includes(userInput)) {
+      // Map each phrase to its specific HTML destination page
+      const secretRoutes = {
+        "p1": "gameyes.html",
+        "p 1": "ansno.html",
+        "secret passcode": "game.html"
+  
+      }; 
+
+      if (userInput in secretRoutes) {
+        const destinationPage = secretRoutes[userInput];
+        
         $secretMsg.css('color', '#4CAF50').text('Access granted! Redirecting...');
         
         setTimeout(function() {
-          window.location.href = "gameyes.html"; // Target page
+          window.location.href = destinationPage;
         }, 800);
       } else {
-        $secretMsg.css('color', '#ff4d4d').text('Something went wrong');
+        // Show failure message
+        $secretMsg.css('color', '#ff4d4d').text('Phrase not found');
+
+        // Automatically clear the message after 3 seconds (3000ms)
+        messageTimer = setTimeout(function() {
+          $secretMsg.text('');
+        }, 3000);
       }
     }
 
-    // Run check on button click
     $(document).on('click', '#secret-btn', function() {
       checkSecretPhrase();
     });
 
-    // Run check on Enter key press inside input
     $(document).on('keypress', '#secret-input', function(e) {
-      if (e.which === 13) { // 13 is the Enter key code
+      if (e.which === 13) {
         checkSecretPhrase();
       }
     });
