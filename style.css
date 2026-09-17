@@ -271,7 +271,15 @@ body {
     align-items: stretch;
   }
 
-  #secret-input, #secret-btn {
+  #secret-input {
+    width: 100%;
+    max-width: 280px;  /* Caps width so it doesn't span edge-to-edge */
+    padding: 0.8rem 1.2rem; /* Reduces inner height/padding */
+    font-size: 1.4rem; /* Keeps text sizing tidy */
+    text-align: center; /* Optional: centers placeholder/typed text */
+  }
+
+  #secret-btn {
     width: 100%;
   }
 }
