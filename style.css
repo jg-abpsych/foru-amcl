@@ -205,3 +205,79 @@ ul.main-menu li a[href="#about"]:hover {
   font-weight: bold;
   min-height: 1.5em;
 }
+
+
+/* ==================================================
+   Responsive Styles & Media Queries
+   ================================================== */
+
+/* 1. Fluid Container & Box Sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%; /* Leaves spacing on small screens */
+  max-width: 800px; /* Caps width on desktop */
+  padding: 0 10px;
+}
+
+/* 2. Responsive Input Group (Secret Container) */
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on tiny screens */
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+#secret-input {
+  flex: 1 1 200px; /* Grows to fit, but wraps if screen < 200px */
+  max-width: 100%;
+  width: 100%;
+}
+
+#secret-btn {
+  flex: 0 0 auto;
+}
+
+/* 3. Mobile Screens (Smartphones: 600px and under) */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%; /* Slightly downsizes rem typography for mobile */
+  }
+
+  body {
+    margin: 10px auto;
+  }
+
+  header, #content, footer {
+    padding: 15px; /* Reduces padding to save screen space */
+  }
+
+  /* Stack menu links or wrap them cleanly */
+  ul.main-menu {
+    gap: 10px;
+  }
+
+  ul.main-menu li a {
+    margin-right: 10px;
+    font-size: 1.6rem; /* Fits menu items better without line breaks */
+  }
+
+  /* Make the input and button full-width on phones */
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #secret-input, #secret-btn {
+    width: 100%;
+  }
+}
+
+/* 4. Small Mobile Screens (360px and under) */
+@media screen and (max-width: 360px) {
+  h1 { font-size: 2.0rem; }
+  h2 { font-size: 1.7rem; }
+}
