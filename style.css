@@ -206,7 +206,7 @@ ul.main-menu li a[href="#about"]:hover {
   min-height: 1.5em;
 }
 
-.panel-button {
+#panel-button {
   padding: 1rem 2rem;
   font-size: 1.6rem;
   font-weight: bold;
