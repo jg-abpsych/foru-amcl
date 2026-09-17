@@ -206,6 +206,112 @@ ul.main-menu li a[href="#about"]:hover {
   min-height: 1.5em;
 }
 
+/* ==================================================
+   Sidebar Styling
+   ================================================== */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #111111;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  width: 64px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 64px;
+}
+
+.brand-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  color: #EF6D3D;
+}
+
+.sidebar.collapsed .brand-title {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: #cfd2da;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  color: #cfd2da;
+  text-decoration: none;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item a:hover {
+  background-color: rgba(239, 109, 61, 0.15);
+  color: #EF6D3D;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.nav-label {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar.collapsed .nav-label {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 /* ==================================================
    Responsive Styles & Media Queries
