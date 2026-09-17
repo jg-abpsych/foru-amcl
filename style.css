@@ -292,3 +292,25 @@ body {
   h1 { font-size: 2.0rem; }
   h2 { font-size: 1.7rem; }
 }
+
+/* Responsive Header Logo */
+.logo-header {
+  display: flex;
+  justify-content: center; /* Centers logo horizontally */
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.logo-header img {
+  max-width: 100%;    /* Prevents image from stretching wider than screen */
+  height: auto;       /* Maintains aspect ratio (prevents squishing) */
+  width: 180px;       /* Sets default desktop width */
+}
+
+/* Adjust logo size for smaller mobile screens */
+@media screen and (max-width: 600px) {
+  .logo-header img {
+    width: 120px;     /* Scales down to fit phone headers nicely */
+  }
+}
